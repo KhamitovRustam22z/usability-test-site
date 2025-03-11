@@ -13,40 +13,115 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тестовый сайт</title>
+    <title>Тестовый сайт для Hotjar</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-        header { background: #007bff; color: #fff; padding: 15px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .container { padding: 20px; }
-        .card { display: inline-block; border: 1px solid #ddd; padding: 15px; margin: 10px; width: 200px; }
-        .cta { background: #28a745; color: white; padding: 10px 15px; border: none; cursor: pointer; }
-        .form input, .form textarea { display: block; width: 80%; margin: 10px auto; padding: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            display: inline-block;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .cta {
+            background: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .cta:hover {
+            background: #218838;
+        }
+        .form input, .form textarea {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        .form button {
+            background: #ff5722;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .form button:hover {
+            background: #e64a19;
+        }
+        .scrollable {
+            height: 200px;
+            overflow-y: auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 20px auto;
+            width: 80%;
+        }
     </style>
- 
 </head>
 <body>
     <header>
-        <h1>Тестовый сайт</h1>
+        <h1>Тестовый сайт для Hotjar</h1>
         <nav>
             <a href="#products">Товары</a>
             <a href="#contact">Контакты</a>
         </nav>
     </header>
     <div class="container">
+        <!-- Товары -->
         <section id="products">
             <h2>Наши товары</h2>
             <div class="card">
                 <h3>Товар 1</h3>
-                <p>Описание товара 1</p>
+                <p>Описание товара 1. Кликайте на кнопки для тестирования.</p>
                 <button class="cta">Купить</button>
             </div>
             <div class="card">
                 <h3>Товар 2</h3>
-                <p>Описание товара 2</p>
+                <p>Описание товара 2. Кликайте на кнопки для тестирования.</p>
                 <button class="cta">Купить</button>
             </div>
         </section>
+
+        <!-- Прокручиваемый контейнер для симуляции прокрутки -->
+        <div class="scrollable">
+            <p>Это прокручиваемая область, чтобы имитировать взаимодействие с прокруткой для тепловой карты.</p>
+            <p>Продолжайте прокручивать, чтобы собрать данные о действиях пользователей на странице.</p>
+            <p>Добавьте больше текста, чтобы было больше прокрутки.</p>
+            <p>Ещё текст...</p>
+            <p>Ещё текст...</p>
+            <p>Ещё текст...</p>
+        </div>
+
+        <!-- Форма для сбора данных -->
         <section id="contact">
             <h2>Свяжитесь с нами</h2>
             <form class="form">
